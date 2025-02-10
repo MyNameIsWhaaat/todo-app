@@ -50,6 +50,8 @@ func (h *Handler) createItem(c *gin.Context){
 
 	c.JSON(http.StatusOK, map[string]interface{}{
 		"id": id,
+        "title": input.Title,
+        "description": input.Description,
 	})
 }
 
